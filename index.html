@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>less5</title>
+
+<style>
+/* Первый вариант — состояния ссылок */
+a:link {
+    color: #33ccff;
+}
+
+a:visited {
+    color: #cecece;
+}
+
+a:hover {
+    color: #336666;
+}
+
+a:active {
+    color: #339999;
+}
+
+/* Второй вариант — оформление меню */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 200px;
+    padding: 5px 10px;
+    margin: 3px 0;
+    background: #0076ba;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    font-weight: bold;
+}
+
+li a:hover {
+    background: #d36800;
+}
+</style>
+
+</head>
+
+<body>
+
+<a id="start"></a>
+
+<ul>
+    <li><a href="#p2">К секции p2</a></li>
+    <li><a href="#end">В конец документа</a></li>
+</ul>
+
+<p id="p1">
+<strong>Это текста в секции p1.</strong>
+Это текста в секции p1. Это текста в секции p1. Это текста в секции p1.
+Это текста в секции p1. Это текста в секции p1. Это текста в секции p1.
+</p>
+
+<p id="p2">
+<strong>Это текста в секции p2.</strong>
+Это текста в секции p2. Это текста в секции p2. Это текста в секции p2.
+Это текста в секции p2. Это текста в секции p2. Это текста в секции p2.
+</p>
+
+<ul>
+    <li><a href="#start">В начало документа</a></li>
+    <li><a href="#p1">В секцию p1</a></li>
+</ul>
+
+<a id="end"></a>
+
+</body>
+</html>
